@@ -1,0 +1,176 @@
+/* 
+==========================
+Index Page (homepage)
+========================== 
+*/
+
+/* Default Styling */
+	
+.summary { 
+	background-color: #E0E0FF;
+	padding: .5em;
+}
+
+.date { 
+	background-color: #E0E0FF; 
+	padding: .5em;
+	margin-bottom: 1em;
+}
+
+.location { 
+	background-color: #E0E0FF;
+	padding: .5em;
+	margin-bottom: 1em;
+
+
+.workshoptitle { 
+	background-color: none; 
+	padding: .5em;
+}
+
+
+
+ .mediaarts{ 
+ 	background-color: #FFFFFF;
+    padding: .5em;
+}
+
+.performing { 
+	background-color: #FFD6AD;
+    padding: .5em;
+}
+
+
+.finearts { 
+	background-color: #C2C2FF;
+    padding: .5em;
+}
+
+.creative { 
+	background-color: #99EBFF;
+    padding: .5em;
+}	
+
+
+// Media Queries Styling and layout
+
+
+
+@include breakpoint(small){
+	//
+.date-layout{
+		@include col(4,4);
+	}
+
+.location-layout{
+		@include col(4,4);
+	}
+
+.speaker {
+	    @include col(4,4);
+
+}	
+
+.track{ 
+        @include col(4,4); 
+}
+
+
+	.introduction{
+		@include col(3,4);
+		
+		p{
+			font-size: 2em;
+			line-height: 1.4em;
+		}
+	}//end introduction
+
+
+	.featuredspeakers{
+		@include set-row;
+	}
+}//end small
+
+@include breakpoint(medium){
+
+
+	.date-layout{
+		@include col(2,4);
+	}
+
+.location-layout{
+		@include col(2,4);
+	}
+
+.speaker {
+	    @include col(2,4);
+
+}	
+
+.track{ 
+        @include col(2,4); 
+}
+
+	
+	.introduction{
+		@include col(3,4);
+		
+		p{
+			font-size: 2em;
+			line-height: 1.4em;
+		}
+	}//end introduction
+
+
+	.featuredspeakers{
+		@include set-row;
+	}
+	
+}//end medium
+
+@include breakpoint(large){
+
+		.date-layout{
+		@include col(1,4);
+	}
+
+.location-layout{
+		@include col(1,4);
+	}
+
+.speaker {
+	    @include col(1,4);
+
+}	
+
+.track{ 
+        @include col(1,4); 
+}
+
+	
+	.introduction{
+		@include col(3,4);
+		
+		p{
+			font-size: 2em;
+			line-height: 1.4em;
+		}
+	}//end introduction
+
+
+	.featuredspeakers{
+		@include set-row;
+	}
+	
+
+}//end large
+
+@include breakpoint(x-large){
+
+}//
+
+
+
+
+
+

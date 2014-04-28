@@ -1,0 +1,160 @@
+//Some Responsive styles
+
+//border-box model
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+/* This is not the only thing you should do for responsive images, but it is a start. Remember that this style will not make your image or video grow any bigger than the original so you have to put in the largest version you will need.
+That can be a performance issue since small screens will download the same image as large ones.
+This article by Luke Wroblewski goes into more detail about that: http://www.lukew.com/ff/entry.asp?1851
+*/
+img,video{
+  width: auto; 
+  max-width: 100%; 
+  height: auto;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Londrina+Outline);
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #DAE2CF url(images/background.jpg) repeat-x left top;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10pt;
+	color: #3B3B3B;
+}
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: 1.5px; 
+	font-family: 'Arvo', serif;
+	font-weight: 400;
+	color: #F6B300;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-family: verdana;
+	letter-spacing: 1px;
+	font-size: 2.4em;
+	margin-bottom: 10px;
+}
+
+h3 {
+     font-family: verdana;
+	font-size: 1.7em;
+	margin-bottom: 10px;
+}
+
+
+h4 {
+     font-family: verdana;
+	letter-spacing: 1.5px;
+    text-transform: none;
+    line-height: 180% ;
+    font-size: 11px ;
+}
+
+
+
+
+
+
+
+p, ul, ol {
+	
+    font-family: verdana;
+	margin-top: 0;
+	line-height: 180%;
+    
+
+
+}
+
+
+
+
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #4C5C37;
+}
+
+a:hover {
+}
+
+// HEADER ===============================
+header{
+
+	h1{
+		font-size: 2em;
+	    font-family: 'Londrina Outline', cursive;
+		padding:2%;
+		text-align: center;
+	}
+
+	@include breakpoint(x-small){
+		h1{
+
+		font-weight: 400;
+		font-size: 3em;
+		}
+	}//end x-small
+
+	@include breakpoint(small){
+		h1{
+
+		font-size: 5em;
+		}
+	}// end small
+
+	@include breakpoint(medium){
+		h1{
+
+		font-weight: 700;
+		font-size: 4em;
+		}
+	}// end medium
+
+	@include breakpoint(large){
+		h1{
+
+		font-size: 5em;
+		}
+	}// end large
+
+	@include breakpoint(x-large){
+		h1{
+
+		font-weight: 900;
+		font-size: 6em;
+		}
+	}// end x-large
+
+}
+
+
+// Footer ===============================
+
+
+
+footer {  
+	color:#eee;
+	background-color: #555;
+	padding: 40px ;
+
+}

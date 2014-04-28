@@ -1,0 +1,1 @@
+This is the beginning example file from class on 4.7.14. We will use it to explore creating layout with Sass and Media Queries and Columns.
